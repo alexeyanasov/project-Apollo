@@ -27,5 +27,14 @@ $(document).ready(function() {
 	    }
 	});
 
+
+	// Вызов слайдера owl-сarousel
+	$("#top-slider").owlCarousel({
+		singleItem: true, //отображать один слайд
+		navigation: true, //отображает стрелки влево, вправо
+		theme: "top-slider-theme", //наша новая тема
+		navigationText: ["", ""] //убирает текст с кнопок (лево, право)
+	});
 	
 });
+
