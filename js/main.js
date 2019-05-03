@@ -27,6 +27,13 @@ $(document).ready(function() {
 	    }
 	});
 
+	//скрытие меню по клику
+	var w = $(window).width(); //ширина
+	if(w < 992){
+		$('nav.navigation a').on("click", function(){
+			menu.slideToggle();
+		});
+	}
 
 	// Вызов слайдера owl-сarousel
 	$("#top-slider").owlCarousel({
@@ -36,5 +43,9 @@ $(document).ready(function() {
 		navigationText: ["", ""] //убирает текст с кнопок (лево, право)
 	});
 	
+	//slide2id - плавная прокрутка по ссылкам
+	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
+	    highlightSelector:"nav a"
+	});
 });
 

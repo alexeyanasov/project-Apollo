@@ -25,7 +25,7 @@
 </head>
 <body>
 	<!-- Логотип  -->
-	<div class="container">
+	<div class="container" id="main">
 		<div class="logo">
 			<div class="logo__title">Аполло 404</div>
 			<div class="logo__subtitle">хостинг компания</div>
@@ -38,12 +38,12 @@
 		<div id="navigation-toggle" class="navigation__toggle-button">Навигация</div>
 		<div class="container container--mobile--no-padding">
 			<ul>
-				<li><a href="#">главная</a></li>
-				<li><a href="#">как мы работаем</a></li>
-				<li><a href="#">фрилансерам</a></li>
-				<li><a href="#">стартапам</a></li>
-				<li><a href="#">тарифы</a></li>
-				<li><a href="#">контакты</a></li>
+				<li><a href="#main">главная</a></li>
+				<li><a href="#benfits">как мы работаем</a></li>
+				<li><a href="#freelance">фрилансерам</a></li>
+				<li><a href="#startup">стартапам</a></li>
+				<li><a href="#price">тарифы</a></li>
+				<li><a href="#footer">контакты</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -127,7 +127,7 @@
 
 
 	<!-- Как мы работаем -->
-	<div class="container text-center section">
+	<div class="container text-center section pb-0 pt-40" id="benfits">
 
 		<div class="heading">Как мы работаем</div>
 
@@ -196,7 +196,7 @@
 	<div class="line"></div>
 
 	<!-- Хостинг для фрилансера -->
-	<div class="container section section--p-t-70 section--m-p-b-0 service-description">
+	<div class="container section section--p-t-70 section--m-p-b-0 service-description" id="freelance">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
 				<div class="service-description__img">
@@ -222,7 +222,7 @@
 	<div class="line"></div>
 
 	<!-- Тариф для стартапов-->
-	<div class="container section section--p-t-70 section--m-p-b-0 service-description">
+	<div class="container section section--p-t-70 section--m-p-b-0 service-description" id="startup">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-sm-push-6">
 				<div class="service-description__img service-description__img--xs-m-b-20">
@@ -248,7 +248,7 @@
 	<div class="line"></div>
 
 	<!-- Тарифы и пакеты -->
-	<div class="container section">
+	<div class="container section pt-40" id="price">
 			<div class="row">
 				<div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 text-center">
 					<h3 class="heading heading--smaller-margin">Тарифы и пакеты</h3> 
@@ -317,7 +317,7 @@
 	<!-- // Тарифы и пакеты -->
 	
 	<!-- Футер -->
-<div class="footer section">
+<div class="footer section" id="footer">
 		<div class="container">
 			<nav class="row">
 				<div class="col-xs-12 col-sm-4 col-lg-3">
@@ -356,6 +356,7 @@
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 
 	<script src="js/main.js"></script>
 

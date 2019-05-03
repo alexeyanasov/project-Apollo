@@ -284,6 +284,12 @@ p {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 40px;
+  padding-top: 80px;
+}
+@media (min-width: 992px) {
+  .logo {
+    padding-top: 30px;
+  }
 }
 .logo__title {
   font-size: 33px;
@@ -316,13 +322,29 @@ p {
 .navigation {
   background-color: #38383A;
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
   box-shadow: 0px 5px 10px 0px #2a496d;
   z-index: 1;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+@media (min-width: 992px) {
+  .navigation {
+    position: relative;
+  }
+}
+@media (min-width: 992px) {
+  .navigation {
+    background-color: #38383A;
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
 }
 @media (min-width: 992px) {
   .navigation {
@@ -554,6 +576,9 @@ p {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center;
 }
+.pb-0 {
+  padding-bottom: 0px;
+}
 .benefit-block {
   padding-bottom: 38px;
 }
@@ -610,6 +635,14 @@ p {
   line-height: 24px;
   color: #777;
 }
+.pt-40 {
+  padding-top: 40px;
+}
+@media (min-width: 991px) {
+  .pt-40 {
+    padding-top: 60px;
+  }
+}
 .service-description__img--xs-m-b-20 {
   margin-bottom: 20px;
 }
@@ -648,6 +681,7 @@ p {
   font-weight: 700;
   margin-bottom: 25px;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 .footer__nav {
   margin: 0;
